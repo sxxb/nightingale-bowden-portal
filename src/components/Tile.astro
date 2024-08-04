@@ -1,0 +1,14 @@
+---
+const { title, abstract, image, url} = Astro.props;
+
+---
+<a class="tile" href=${url}>
+    <img
+        src={image}
+        alt={title}
+    />
+    <div class="tile-text">
+        <h3>{title}</h3>
+        <p>{abstract}</p>
+    </div>
+</a>
