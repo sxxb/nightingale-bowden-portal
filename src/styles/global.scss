@@ -443,7 +443,9 @@ body {
                 }
 
                 &.notices-container {
-                    .active-notice {}
+                    .active-notice {
+                        outline:0;
+                    }
 
                     .past-notice {
                         opacity: 0.5;
@@ -509,6 +511,7 @@ body {
                             background: $nb-pur-6;
                             transition: $transition-1;
                             font-size: $font-s;
+                            margin-left:0.25rem;
 
                             &:hover {
                                 background: white;

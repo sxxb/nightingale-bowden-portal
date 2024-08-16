@@ -1,0 +1,36 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={ frontmatter.title }>
+<section>
+    <div class="article-container">
+      <div class="article-container-nav">
+        <a href="">← Back</a> 
+        <div class="article-container-tags">
+          {frontmatter.tags.map((tag) => <a>{tag}</a>)}
+        </div>
+      </div>
+      <div class="article-container-title">
+        <h1>{ frontmatter.title }</h1>
+        <p class="timestamp">{ frontmatter.publishedDate }</p>
+      </div>
+      <div class="article-container-abstract">
+        <p>{ frontmatter.abstract }</p>
+      </div>
+      <div class="article-container-body">
+        <slot />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="title-container">
+      <h2>Other Notices</h2>
+    </div>
+  </section>
+  <section>
+    <nav class="tile-container notices-container">
+        <p>todo</p>
+    </nav>
+  </section>
+</BaseLayout>
