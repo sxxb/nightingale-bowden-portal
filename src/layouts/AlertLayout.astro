@@ -6,14 +6,11 @@ const { frontmatter } = Astro.props;
 <section>
     <div class="article-container">
       <div class="article-container-nav">
-        <a href=".">← Back</a> 
-        <div class="article-container-tags">
-          {frontmatter.tags.map((tag) => <a class="todo">{tag}</a>)}
-        </div>
+        <a href="/">← Back</a> 
       </div>
       <div class="article-container-title">
         <h1>{ frontmatter.title }</h1>
-        <p class="timestamp" >{ frontmatter.publishedDate }</p>
+        <p class="timestamp">{ frontmatter.publishedDate }</p>
       </div>
       <div class="article-container-abstract">
         <p>{ frontmatter.abstract }</p>

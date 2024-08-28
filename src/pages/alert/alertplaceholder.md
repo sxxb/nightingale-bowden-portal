@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/ArticleLayout.astro
-title: 'Hello World'
-abstract: 'A test notice to examine how content and colllections are displayed'
-publishedDate: "2024-08-16"
+layout: ../../layouts/AlertLayout.astro
+title: 'Alert Placeholder'
+abstract: 'A test alert placeholder'
+publishedDate: "16 August 2024"
 tags: ["building update", "test notice", "mups"]
 ---
 

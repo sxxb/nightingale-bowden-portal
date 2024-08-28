@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: 'Hello World'
 abstract: 'A test notice to examine how content and colllections are displayed'
-publishedDate: 2024-08-16
+publishedDate: "2024-08-16"
 tags: ["building update", "test notice", "mups"]
 ---
 

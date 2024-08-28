@@ -2,7 +2,7 @@
 const { title, abstract, image, url} = Astro.props;
 
 ---
-<a class="tile" href=${url}>
+<a class="tile" href={url}>
     <img
         src={image}
         alt={title}

@@ -1,11 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Alert from "../components/Alert.astro";
-import Tilecontainer from "../components/Tilecontainer.astro";
+import Tile from "../components/Tile.astro";
 const pageTitle = "Nightingale Bowden Resident Directory"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<Alert />
-	<Tilecontainer />
+	<section>
+		<nav class="tile-container">
+			<Tile title="Notices" abstract="Updates from the community" image="https://doodleipsum.com/500x500/hand-drawn?i=c94e81dc0557f175ff2be082cacfed4c" url="/notices" />
+			<Tile title="Rooftop" abstract="Bookings & Information" image="https://doodleipsum.com/500x500/hand-drawn?i=f16e7a2fab525f0570eca81ef670d9cd" url="/rooftop"/>
+			<Tile title="Guesthouse" abstract="Bookings & Information" image="https://doodleipsum.com/500x500/hand-drawn?i=6046b13cfc8fb2fbd8c33f8a39474407" url="/guesthouse"/>
+			<Tile title="Calendar" abstract="Upcoming Events" image="https://doodleipsum.com/500x500/hand-drawn?i=73307fb724563188616cb5114eca626f" url="/calendar"/>
+			<Tile title="Resources" abstract="Policies, how-to guides and more" image="https://doodleipsum.com/500x500/hand-drawn?i=f1882377f81704b2779449c08112cbce" url="/resources"/>
+			<Tile title="Committee" abstract="Information about the committee" image="https://doodleipsum.com/500x500/hand-drawn?i=76435a42d4a61505808419da3822a1e5" url="/commitee"/>
+			<Tile title="Strata Manager" abstract="Contact Details" image="https://doodleipsum.com/500x500/hand-drawn?i=83377bdd7d54e6250fe7d8afaa0ec79c" url="/strata"/>
+			<Tile title="Slack" abstract="Our Community Slack Channel" image="https://doodleipsum.com/500x500/hand-drawn?i=797746f93a4c479f102174de8a8088eb" url="https://nightingalebowden.slack.com/"/>
+		</nav>
+	</section>
 </BaseLayout>

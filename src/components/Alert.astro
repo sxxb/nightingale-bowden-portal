@@ -1,9 +1,15 @@
+---
+const allPosts = await Astro.glob('../pages/alert/*.md');
+---
+
 <section>
-    <div class="alert-container">
-      <h4>Notice</h4>
-      <h3>The Notice Goes Here</h3>
-      <p>The body of the notice goes here</p>
-      <a href="">Learn More →</a>
-      <p class="timestamp">12:34pm 05/06/2024</p>
-    </div>
+    {allPosts.map((post) => 
+      <div class="alert-container">
+        <h4>Notice</h4>
+        <h3>{post.frontmatter.title} </h3>
+        <p>{post.frontmatter.abstract}</p>
+        <a href={post.url}>Learn More →</a>
+        <p class="timestamp">{post.frontmatter.publishedDate}</p>
+        </div>
+    )}
   </section>
