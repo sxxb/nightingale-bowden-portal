@@ -1,6 +1,13 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
+
+import dayjs from "dayjs";
+// import utc from "dayjs/plugin/utc";
+// dayjs.extend(utc);
+// const lastModified = dayjs().utc(Astro.props.frontmatter.lastModified).format("DD MMMM YYYY");
+const lastModified = dayjs(Astro.props.frontmatter.lastModified).format("MMMM DD YYYY");
+console.log( frontmatter );
 ---
 <BaseLayout pageTitle={ frontmatter.title }>
 <section>
@@ -13,7 +20,8 @@ const { frontmatter } = Astro.props;
       </div> -->
       <div class="article-container-title">
         <h1>{ frontmatter.title }</h1>
-        <p class="timestamp" >{ frontmatter.publishedDate.toString().slice(4,15) }</p>
+        <!-- <p class="timestamp" >{ frontmatter.publishedDate.toString().slice(4,15) }</p> -->
+        <p class="timestamp" >{ lastModified }</p>
       </div>
       <div class="article-container-abstract">
         <p>{ frontmatter.abstract }</p>
