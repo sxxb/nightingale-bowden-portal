@@ -1,10 +1,9 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-// const { frontmatter } = Astro.props;
 const { collectionTitle, collectionDescription } = Astro.props;
 ---
 
-<BaseLayout pageTitle="collectiontitle">
+<BaseLayout pageTitle={ collectionTitle }>
     <section>
         <div class="title-container">
           <h1>{ collectionTitle }</h1>
@@ -13,7 +12,7 @@ const { collectionTitle, collectionDescription } = Astro.props;
       </section>
       <section>
         <nav class="tile-container notices-container">
-          <slot />
+        <slot />
         </nav>
       </section>
 </BaseLayout>

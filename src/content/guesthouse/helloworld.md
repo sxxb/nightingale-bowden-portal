@@ -1,13 +1,11 @@
 ---
-layout: ../../layouts/ArticleLayout.astro
-title: 'Hello World'
+title: 'Hello World Content'
 abstract: 'A test notice to examine how content and colllections are displayed'
-publishedDate: "2024-08-16"
-tags: ["building update", "test notice", "mups"]
+publishedDate: 2024-08-16
+# tags: ["building update", "test notice", "mups"]
 ---
 
-# Hello World
-
+# Hello World Content
 This is a test markdown page.
 
 List:

@@ -1,8 +1,8 @@
 ---
-const { title, abstract, image, url} = Astro.props;
+const { title, abstract, image = "https://doodleipsum.com/500x500/hand-drawn", url, target = "_self" } = Astro.props;
 
 ---
-<a class="tile" href={url}>
+<a class="tile" href={url} target={target}>
     <img
         src={image}
         alt={title}

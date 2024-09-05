@@ -1,15 +1,16 @@
 ---
-const allPosts = await Astro.glob('../pages/alert/*.md');
+import { getCollection } from 'astro:content';
+const allAlerts = await getCollection("alert");
 ---
 
 <section>
-    {allPosts.map((post) => 
+    {allAlerts.map((alert) => 
       <div class="alert-container">
         <h4>Notice</h4>
-        <h3>{post.frontmatter.title} </h3>
-        <p>{post.frontmatter.abstract}</p>
-        <a href={post.url}>Learn More →</a>
-        <p class="timestamp">{post.frontmatter.publishedDate}</p>
+        <h3>{alert.data.title} </h3>
+        <p>{alert.data.abstract}</p>
+        <a href={`content/alert/${alert.slug}/`}>Learn More →</a>
+        <p class="timestamp">{alert.data.publishedDate}</p>
         </div>
     )}
   </section>

@@ -1,0 +1,18 @@
+---
+import CollectionLayout from "../../layouts/CollectionLayout.astro"
+import Tile from "../../components/Tile.astro"
+import { getCollection } from "astro:content";
+const allArticles = await getCollection("rooftop");
+---
+
+<CollectionLayout collectionTitle="Rooftop" collectionDescription="Description">
+    {allArticles.map((article) => 
+        <Tile 
+            title={article.data.title} 
+            abstract={article.data.abstract}
+            image={article.data.image} 
+            url={`/rooftop/${article.slug}/`}
+            >
+        </Tile>
+    )}
+</CollectionLayout>

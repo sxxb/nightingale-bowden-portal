@@ -1,12 +1,11 @@
 ---
-layout: ../../layouts/AlertLayout.astro
-title: 'Alert Placeholder'
+title: 'Alert Placeholder Content'
 abstract: 'A test alert placeholder'
 publishedDate: "16 August 2024"
-tags: ["building update", "test notice", "mups"]
+# tags: ["building update", "test notice", "mups"]
 ---
 
-# Hello World
+# Hello World Content
 
 This is a test markdown page.
 
