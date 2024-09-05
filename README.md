@@ -1,54 +1,20 @@
-# Astro Starter Kit: Basics
+# Nightingale Bowden Resident Portal
 
-```sh
-npm create astro@latest -- --template basics
-```
+## What is this?
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+A little directory website for residents of Nightingale Bowden in Adelaide, South Australia. It contains information about the building, useful resources for residents, and links to other things like our Slack channel, our Strata Manager, etc.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is not intended to be a comprehensive, official resource of the building, but rather a good way to improve my coding skills while creating something useful for my community. Do not rely on this resource existing forever!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## How did you make it?
 
-## 🚀 Project Structure
+Using [Astro](https://astro.build). I created a few basic components and layouts, developed a collection schema for the various categories of articles, and then wrote a *lot* of Markdown to populate those collections. It's not particularly advanced, but it should be easy to manage, easy to add more content to in future, and most of all easy to use.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Can I contribute?
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+I would prefer to keep the project within the building community so if you are somehow reading this as a third party I will probably respectfully decline. If you're a neighbour of mine, you can absolutely contribute. I'm not an expert and if you think there's something I could be doing better, or you have ideas for useful additions, please reach out.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## What's Nightingale Bowden?
+A socially, environmentally and financially stable apartment building in Adelaide, South Australia. You can read more about Nightingale Bowden (and Nightingale's other projects) [here](https://www.nightingalehousing.org/project/nightingale-bowden).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
