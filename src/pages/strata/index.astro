@@ -11,7 +11,7 @@ const allArticles = await getCollection("strata");
             title={article.data.title} 
             abstract={article.data.abstract}
             image={article.data.image} 
-            url={`/strata/${article.slug}/`}
+            url={`strata/${article.slug}/`}
             >
         </Tile>
     )}

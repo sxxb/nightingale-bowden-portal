@@ -11,7 +11,7 @@ const allArticles = await getCollection("rooftop");
             title={article.data.title} 
             abstract={article.data.abstract}
             image={article.data.image} 
-            url={`/rooftop/${article.slug}/`}
+            url={`rooftop/${article.slug}/`}
             >
         </Tile>
     )}

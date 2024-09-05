@@ -11,7 +11,7 @@ const allArticles = await getCollection("guesthouse");
             title={article.data.title} 
             abstract={article.data.abstract}
             image={article.data.image} 
-            url={`/guesthouse/${article.slug}/`}
+            url={`guesthouse/${article.slug}/`}
             >
         </Tile>
     )}
