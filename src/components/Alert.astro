@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-const allAlerts = await getCollection("alert");
+const allAlerts = await getCollection('alert', ({ data }) => {
+  return data.publishedDate === "16 August 2024"
+});
 ---
 
 <section>

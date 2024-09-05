@@ -1,5 +1,7 @@
 # Nightingale Bowden Resident Portal
 
+[Link](https://sxxb.github.io/nightingale-bowden-portal/)
+
 ## What is this?
 
 A little directory website for residents of Nightingale Bowden in Adelaide, South Australia. It contains information about the building, useful resources for residents, and links to other things like our Slack channel, our Strata Manager, etc.
