@@ -19,4 +19,13 @@ I would prefer to keep the project within the building community so if you are s
 ## What is Nightingale Bowden?
 A socially, environmentally, and financially sustainable apartment building in Adelaide, South Australia. You can read more about Nightingale Bowden (and Nightingale's other projects) [here](https://www.nightingalehousing.org/project/nightingale-bowden).
 
+## To Do:
+
+- handle alerts => display either no alert or most recent alert only. may require...
+- [automatic timestamping](https://docs.astro.build/en/recipes/modified-time/)
+- [manage tags across all collections for one single tag page](https://stackoverflow.com/questions/77525579/how-to-retrieve-all-content-with-getcollection)
+- replace images (host locally)
+- tweak styling, particularly for mobile
+- add content with feedback from community
+
 
