@@ -1,18 +1,20 @@
 ---
-import { getCollection } from 'astro:content';
-const allAlerts = await getCollection('alert', ({ data }) => {
-  return data.publishedDate === "16 August 2024"
-});
+import { getCollection } from "astro:content";
+const allAlerts = await getCollection("alerts");
+console.log(allAlerts);
+const latestAlert = allAlerts[0];
+
+// if (allAlerts.length !== 0) {
+//   const latestAlert = allAlerts[0];
+// }
 ---
 
 <section>
-    {allAlerts.map((alert) => 
-      <div class="alert-container">
-        <h4>Notice</h4>
-        <h3>{alert.data.title} </h3>
-        <p>{alert.data.abstract}</p>
-        <a href={`content/alert/${alert.slug}/`}>Learn More →</a>
-        <p class="timestamp">{alert.data.publishedDate}</p>
-        </div>
-    )}
-  </section>
+  <div class="alert-container">
+    <h4>Notice</h4>
+    <h3>{latestAlert.data.title} </h3>
+    <p>{latestAlert.data.abstract}</p>
+    <a href={`alerts/${latestAlert.slug}/`}>Learn More →</a>
+    <p class="timestamp">{latestAlert.data.publishedDate.toString().slice(0,21)}</p>
+    </div>
+</section>

@@ -2,6 +2,16 @@
 import { z, defineCollection } from 'astro:content';
 
 // 2. Define your collection(s)
+const alertsCollection = defineCollection({
+   type: 'content',
+   schema: z.object({
+      title: z.string(),
+      abstract: z.string(),
+      // tags: z.array(z.string()).optional(),
+      image: z.string().optional(),
+      publishedDate: z.date(),
+   }) 
+});
 const eventsCollection = defineCollection({
    type: 'content',
    schema: z.object({
@@ -86,6 +96,7 @@ const strataCollection = defineCollection({
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
+  'alerts': alertsCollection,
   'events': eventsCollection,
   'committee': committeeCollection,
   'guesthouse': guesthouseCollection,

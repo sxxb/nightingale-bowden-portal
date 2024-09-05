@@ -27,5 +27,8 @@ A socially, environmentally, and financially sustainable apartment building in A
 - replace images (host locally)
 - tweak styling, particularly for mobile
 - add content with feedback from community
+- back button on articles (not playing nicely with base url requirement)
+- add to schema: option for 'old' notices/alerts/events (greyed out but still visible)
+- 
 
 
