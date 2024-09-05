@@ -14,7 +14,7 @@ Using [Astro](https://astro.build). I created a few basic components and layouts
 
 I would prefer to keep the project within the building community so if you are somehow reading this as a third party I will probably respectfully decline. If you're a neighbour of mine, you can absolutely contribute. I'm not an expert and if you think there's something I could be doing better, or you have ideas for useful additions, please reach out.
 
-## What's Nightingale Bowden?
-A socially, environmentally and financially stable apartment building in Adelaide, South Australia. You can read more about Nightingale Bowden (and Nightingale's other projects) [here](https://www.nightingalehousing.org/project/nightingale-bowden).
+## What is Nightingale Bowden?
+A socially, environmentally, and financially sustainable apartment building in Adelaide, South Australia. You can read more about Nightingale Bowden (and Nightingale's other projects) [here](https://www.nightingalehousing.org/project/nightingale-bowden).
 
 
