@@ -24,7 +24,7 @@ The **Admin Fund** is used for annual expenses. This includes cleaning, gardenin
 The **Sinking Fund** is used for long term expenses, which may or may not be foreseable. Examples could include replacing solar panels at the end of their life span, addressing urgent structural issues, or funding improvements to the building that are have been planned far in advance.
 
 # What kind of rules can a Strata Corporation impose?
-Generally, the rules (known as articles) relate to being a good neighbour; keeping your lot in good condition, not obstructing common areas, not being disruptive to other lot owners, and so on. For a specific list our Strata Corporation articles, contact our [Strata Manager](strata/our-strata-manager).
+Generally, the rules (known as articles) relate to being a good neighbour; keeping your lot in good condition, not obstructing common areas, not being disruptive to other lot owners, and so on. For a specific list of our Strata Corporation articles, contact our [Strata Manager](strata/our-strata-manager).
 
 # Where can I learn more about Strata Corporations?
 A good place to start is the [SA Government website](https://www.sa.gov.au/topics/housing/owning-a-property/certificates-of-title/strata-titles).
