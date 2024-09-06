@@ -22,7 +22,7 @@ A socially, environmentally, and financially sustainable apartment building in A
 ## To Do:
 
 - handle alerts => display either no alert or most recent alert only. may require...
-- [automatic timestamping](https://docs.astro.build/en/recipes/modified-time/)
+- [automatic timestamping](https://docs.astro.build/en/recipes/modified-time/) <= is this working, or is it going to update 'lastModified' for every file on every commit?
 - [manage tags across all collections for one single tag page](https://stackoverflow.com/questions/77525579/how-to-retrieve-all-content-with-getcollection)
 - replace images (host locally)
 - tweak styling, particularly for mobile
