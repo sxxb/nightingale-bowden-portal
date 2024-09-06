@@ -365,6 +365,7 @@ body {
                         background: $nb-plant-6;
                         border-radius: 50%;
                         transition: $transition-1;
+                        opacity:0.85
                     }
 
                     &:hover {
@@ -372,6 +373,7 @@ body {
 
                         img {
                             background: $nb-plant-5;
+                            opacity:1
                         }
                     }
 
@@ -517,8 +519,30 @@ body {
                 }
 
                 .article-container-body {
-                    p {
+                    h1, h2, h3, h4, h5, p {
                         margin-bottom: 1rem;
+                    }
+                    ul {
+                        margin-bottom: 1rem;
+                        margin-left:0.5rem;
+                        li {
+                            list-style-type: "+";padding-left:0.5rem;
+                        }
+                    }
+                    ol {
+                        margin-bottom: 1rem;
+                        margin-left:1rem;
+                        li {
+                            list-style-type:decimal;padding-left:0.5rem;
+                        }
+                    }
+                    a {
+                        font-weight: 700;
+                        color: $nb-gn-2;
+                        transition: $transition-1;
+                        &:hover {
+                            color: $nb-gn-3;
+                        }
                     }
                 }
             }
