@@ -133,7 +133,7 @@ body {
         display:flex;
         align-items:space-between;
 
-        > div.title {
+        > a.title {
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -181,7 +181,7 @@ body {
 
         .hamburger .line {
             display: block;
-            width: 2.5rem;
+            width: 1.85rem;
             height: 0.25rem;
             background-color: white;
             border-radius:0.125rem;
@@ -201,27 +201,25 @@ body {
         >nav.nav-links {
             background: $nb-plant-3;
             padding: 0 1rem;
-            display: none;
+            display:block;
+            overflow-x:scroll;
 
-            &.expanded {
-                display: block;
-            }
             @media screen and (min-width: 600px) {
-                display: block;
+                overflow-x:initial;
             }
 
             div {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-evenly;
-                margin: 0 auto;
-                height: calc(100vh - #{$header-height});
-
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 2rem;
+                margin:0 auto;
                 a {
                     color: $nb-plant-6;
-                    font-size: $font-l;
+                    font-size: $font-s;
                     transition: $transition-1;
+                    padding:0 0.5rem;
 
                     &:hover {
                         color: $nb-plant-7;
@@ -235,14 +233,6 @@ body {
 
                 @media screen and (min-width: 600px) {
                     max-width: 600px;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 2rem;
-
-                    a {
-                        font-size: $font-s;
-                    }
                 }
 
                 @media screen and (min-width: 900px) {
