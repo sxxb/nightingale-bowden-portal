@@ -1,7 +1,7 @@
 ---
 title: 'Hello World Content'
 abstract: 'A test notice to examine how content and colllections are displayed'
-publishedDate: 2024-08-16
+
 # tags: ["building update", "test notice", "mups"]
 ---
 

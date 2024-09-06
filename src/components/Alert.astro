@@ -1,12 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 const allAlerts = await getCollection("alerts");
-// console.log(allAlerts);
 const latestAlert = allAlerts[0];
 
-// if (allAlerts.length !== 0) {
-//   const latestAlert = allAlerts[0];
-// }
+import dayjs from "dayjs";
+const lastModified = dayjs(latestAlert.data.lastModified);
+const lastModifiedShort = lastModified.format("MMMM DD YYYY");
+const lastModifiedLong = lastModified.format("HH:mm:ss DD-MM-YYYY");
 ---
 
 <section>
@@ -15,6 +15,6 @@ const latestAlert = allAlerts[0];
     <h3>{latestAlert.data.title} </h3>
     <p>{latestAlert.data.abstract}</p>
     <a href={`alerts/${latestAlert.slug}/`}>Learn More →</a>
-    <p class="timestamp">{latestAlert.data.publishedDate.toString().slice(0,21)}</p>
+    <p class="timestamp" data-datetime-utc={ lastModifiedLong }>{ lastModifiedShort }</p>
     </div>
 </section>

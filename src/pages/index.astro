@@ -3,10 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Alert from "../components/Alert.astro";
 import Tile from "../components/Tile.astro";
 const pageTitle = "Nightingale Bowden Resident Directory"
+
+import { getCollection } from "astro:content";
+const allAlerts = await getCollection("alerts");
+const latestAlert = allAlerts[0];
+
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<Alert />
+
+	<Alert client:load/>
 	<section>
 		<nav class="tile-container">
 			<Tile title="Notices" abstract="Updates from the community" image="https://doodleipsum.com/500x500/hand-drawn?i=c94e81dc0557f175ff2be082cacfed4c" url="notices" />
